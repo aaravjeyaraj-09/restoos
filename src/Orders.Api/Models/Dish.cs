@@ -1,4 +1,11 @@
 namespace Orders.Api.Models
 {
-    public record Dish(int Id, string DishName, decimal DishPriceNok, bool IsAvailable);
+    public class Dish
+    {
+        public int Id { get; set; }
+        public string DishName { get; set; } = string.Empty;
+        public decimal DishPriceNok { get; set; }
+
+        public bool IsAvailable { get; set; } = true;
+    }
 }
